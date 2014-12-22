@@ -9,6 +9,8 @@
 #import "ENSpinnerView.h"
 
 #define SPINNER_VIEW_HEIGHT 25.f
+#define SPINNER_COLOR_BASE [UIColor colorWithRed:0.133 green:0.255 blue:0.647 alpha:1]
+#define SPINNER_COLOR_SPINNER [UIColor colorWithRed:0.957 green:0.827 blue:0.098 alpha:1];
 
 @interface ENSpinnerView()
 @property (nonatomic, strong) NSTimer *timer;
@@ -42,7 +44,7 @@
     _maskingLayer.frame = self.bounds;
     [_maskingLayer setContents:(id)[_maskingImage CGImage]];
     [self.layer setMask:_maskingLayer];
-    self.backgroundColor = [UIColor colorWithRed:0.133 green:0.255 blue:0.647 alpha:1];
+    self.backgroundColor = SPINNER_COLOR_BASE;
     
     UIImage *_maskingImage1 = [UIImage imageNamed:@"small_loader_triangle"];
     _spinner = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _maskingImage1.size.width, _maskingImage1.size.height)];
@@ -53,7 +55,7 @@
     self.spinner.layer.anchorPoint = CGPointMake(0.5, 1);
     self.spinner.backgroundColor = UIColor.redColor;
     self.spinner.center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
-    self.spinner.backgroundColor = [UIColor colorWithRed:0.957 green:0.827 blue:0.098 alpha:1];
+    self.spinner.backgroundColor = SPINNER_COLOR_SPINNER;
     [self addSubview:self.spinner];
     
     [self setHidden:YES];
