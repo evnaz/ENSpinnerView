@@ -14,6 +14,9 @@
 		5C8F04751A4882E60004D23B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F04741A4882E60004D23B /* Images.xcassets */; };
 		5C8F04781A4882E60004D23B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F04761A4882E60004D23B /* LaunchScreen.xib */; };
 		5C8F04841A4882E60004D23B /* ENSpinnerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F04831A4882E60004D23B /* ENSpinnerViewTests.m */; };
+		5C8F048F1A48830B0004D23B /* ENSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F048E1A48830B0004D23B /* ENSpinnerView.m */; };
+		5C8F049C1A4888CA0004D23B /* small_loader_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F049A1A4888CA0004D23B /* small_loader_circle@2x.png */; };
+		5C8F049D1A4888CA0004D23B /* small_loader_triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F049B1A4888CA0004D23B /* small_loader_triangle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		5C8F047D1A4882E60004D23B /* ENSpinnerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENSpinnerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8F04821A4882E60004D23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C8F04831A4882E60004D23B /* ENSpinnerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENSpinnerViewTests.m; sourceTree = "<group>"; };
+		5C8F048D1A48830B0004D23B /* ENSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ENSpinnerView.h; path = ENSpinnerView/ENSpinnerView.h; sourceTree = "<group>"; };
+		5C8F048E1A48830B0004D23B /* ENSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ENSpinnerView.m; path = ENSpinnerView/ENSpinnerView.m; sourceTree = "<group>"; };
+		5C8F049A1A4888CA0004D23B /* small_loader_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "small_loader_circle@2x.png"; path = "ENSpinnerView/resources/small_loader_circle@2x.png"; sourceTree = "<group>"; };
+		5C8F049B1A4888CA0004D23B /* small_loader_triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "small_loader_triangle@2x.png"; path = "ENSpinnerView/resources/small_loader_triangle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +96,7 @@
 				5C8F04741A4882E60004D23B /* Images.xcassets */,
 				5C8F04761A4882E60004D23B /* LaunchScreen.xib */,
 				5C8F04671A4882E60004D23B /* Supporting Files */,
+				5C8F04901A4883100004D23B /* ENSpinnerView */,
 			);
 			path = ENSpinnerView;
 			sourceTree = "<group>";
@@ -117,6 +125,25 @@
 				5C8F04821A4882E60004D23B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C8F04901A4883100004D23B /* ENSpinnerView */ = {
+			isa = PBXGroup;
+			children = (
+				5C8F048D1A48830B0004D23B /* ENSpinnerView.h */,
+				5C8F048E1A48830B0004D23B /* ENSpinnerView.m */,
+				5C8F04951A4884610004D23B /* resources */,
+			);
+			name = ENSpinnerView;
+			sourceTree = "<group>";
+		};
+		5C8F04951A4884610004D23B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C8F049A1A4888CA0004D23B /* small_loader_circle@2x.png */,
+				5C8F049B1A4888CA0004D23B /* small_loader_triangle@2x.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +228,9 @@
 			files = (
 				5C8F04731A4882E60004D23B /* Main.storyboard in Resources */,
 				5C8F04781A4882E60004D23B /* LaunchScreen.xib in Resources */,
+				5C8F049D1A4888CA0004D23B /* small_loader_triangle@2x.png in Resources */,
 				5C8F04751A4882E60004D23B /* Images.xcassets in Resources */,
+				5C8F049C1A4888CA0004D23B /* small_loader_circle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +251,7 @@
 				5C8F04701A4882E60004D23B /* ViewController.m in Sources */,
 				5C8F046D1A4882E60004D23B /* AppDelegate.m in Sources */,
 				5C8F046A1A4882E60004D23B /* main.m in Sources */,
+				5C8F048F1A48830B0004D23B /* ENSpinnerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

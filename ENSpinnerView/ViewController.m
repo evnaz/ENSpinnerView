@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ENSpinnerView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    ENSpinnerView *spinner = [ENSpinnerView spinner];
+    spinner.center = self.view.center;
+    [self.view addSubview:spinner];
+    [spinner startAnimating];
 }
 
 - (void)didReceiveMemoryWarning {
